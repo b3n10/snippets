@@ -1,0 +1,87 @@
+# functions
+snippet fun1
+	fun ${1}() {
+		${2}
+	}
+snippet fun2
+	fun ${1}(): ${2} {
+		${3}
+	}
+snippet fun3
+	fun ${1}(${2} : ${3}) : ${4} {
+		${5}
+	}
+snippet override1
+	override fun ${1}
+snippet override2
+	override fun ${1}()
+snippet override3
+	override fun ${1}(${2}: ${3}) {
+		${4}
+	}
+snippet override4
+	override fun ${1}(${2}: ${3}) : ${4} {
+		${5}
+	}
+
+# variables
+snippet pcv
+	private const val ${1} = "${2}"
+snippet private
+	private
+snippet private1
+	private lateinit var ${1}: ${2}
+snippet private2
+	private lateinit var ${1} = "${2}"
+snippet private3
+	private lateinit var ${1}: ${2} = "${3}"
+snippet lazy
+	private val ${1} by lazy {
+		${2}
+	}
+
+snippet package
+	package ${1}
+
+
+# class
+snippet class
+	class
+snippet class1
+	class ${1} {
+	}
+snippet class2
+	class ${1}(${2}: ${3}) {
+	}
+snippet class3
+	class ${1} : ${2} {
+	}
+snippet class4
+	class ${1}(${2}: ${3}) : ${4}() {
+	}
+snippet interface
+	interface ${1} {
+		fun ${2}()
+	}
+snippet generic
+	${1}<${2}>
+snippet companion
+	companion object {
+		fun ${1}() {
+			${2}
+		}
+	}
+snippet init
+	init {
+		${1}
+	}
+
+snippet if
+	if (${1})
+		${2}
+snippet if1
+	if (${1}) {
+		${2}
+	} else {
+	}
+
